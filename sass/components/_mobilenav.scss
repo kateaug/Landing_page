@@ -12,7 +12,7 @@
         padding: 1.2rem;
         top: 0;
         right:0;
-        transform: translate(-50%, 20%);
+        transform: translate(-50%, 10%);
 
         @media only screen and (max-width: 767px) {
         color: $color-white;
@@ -33,6 +33,12 @@
     width: 100%;
     background-color: rgba(37, 24, 24, 0.4);
     z-index: 9999;
+
+    @media only screen and (max-width: 767px) {
+       padding: 1rem;
+
+    }
+    
 
     .navigation__list {
         margin-top: 1.5rem;

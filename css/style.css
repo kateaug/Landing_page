@@ -81,7 +81,7 @@ body {
     padding: 1.2rem;
     top: 0;
     right: 0;
-    transform: translate(-50%, 20%); }
+    transform: translate(-50%, 10%); }
     @media only screen and (max-width: 767px) {
       .mobile__nav-icon {
         color: #fff; } }
@@ -97,6 +97,9 @@ body {
   width: 100%;
   background-color: rgba(37, 24, 24, 0.4);
   z-index: 9999; }
+  @media only screen and (max-width: 767px) {
+    .sticky {
+      padding: 1rem; } }
   .sticky .navigation__list {
     margin-top: 1.5rem; }
   .sticky .navigation__item__link:visited, .sticky .navigation__item__link:link {
@@ -327,6 +330,8 @@ body {
     display: inline-block; }
   .footer__items-cookies:hover {
     color: #fff; }
+  .footer__items-separator {
+    margin: 1rem; }
   .footer__items-design-author {
     color: #fff;
     font-weight: 700; }
