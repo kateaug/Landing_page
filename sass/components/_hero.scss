@@ -1,0 +1,27 @@
+.hero {
+    display: flex;
+	flex-direction: column;
+    margin: 0 auto;
+    
+    &__title {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &-img  {
+            display: block;
+            height: 100%;
+            width: 100%;
+
+            @media only screen and (max-width: 480px) {
+                width: 120%;
+                margin-left: -2rem;
+        
+            }
+        }
+    }
+}
+

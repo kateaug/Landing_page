@@ -1,0 +1,48 @@
+.mobile__nav {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+      
+    &-icon {
+        font-size: 200%;
+        color: $color-white;
+        position: absolute;
+        padding: 1.2rem;
+        top: 0;
+        right:0;
+        transform: translate(-50%, 20%);
+
+        @media only screen and (max-width: 767px) {
+        color: $color-white;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        display: inline-block;
+        margin-top: 1.2rem;
+
+    }
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+    width: 100%;
+    background-color: rgba(37, 24, 24, 0.4);
+    z-index: 9999;
+
+    .navigation__list {
+        margin-top: 1.5rem;
+    }
+
+    .navigation__item {
+        &__link:visited,
+        &__link:link {
+            padding: 1.7rem 0;
+        }
+    }
+    .navigation__image {display: none;}
+}

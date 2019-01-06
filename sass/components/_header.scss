@@ -1,0 +1,64 @@
+.header {
+    width: 100%;
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    
+        &__list {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0 2rem 0;
+        list-style: none;
+
+            @media only screen and (max-width: 767px) {
+              display: none;
+              float: left;
+              margin-top: 3rem;
+              margin-left: 2.5rem;
+            }
+        }
+
+        &__item {
+            margin: 1rem;
+            text-transform: uppercase;
+            z-index: 1;
+            padding: 3rem;
+            letter-spacing: 1px;
+
+            @media only screen and (max-width: 767px) {
+                display: block;
+                padding: 10px 0;
+                
+            }
+        }
+
+        &__image {
+           transform: translateY(-30%);
+        }
+
+        &__link {
+            &:link,
+            &:visited {
+            display: inline-block;
+            color: $color-light-gray;
+            font-size: 1.4rem;
+            text-decoration: none;
+            }
+
+            &:hover:not(:nth-child(3n)) {
+                color: $color-white;
+            }
+
+            &:hover {
+                @media only screen and (max-width: 767px) {
+                    color: $color-white;
+                    
+            }
+            }
+        }
+    }
+}
+  

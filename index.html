@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="vendors/ionicons.min.css">
+        <link rel="stylesheet" href="css/style.css"> 
+        <title>Raspberry</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <header class="header">
+        <nav class="navigation">
+            <ul class="navigation__list js__main-nav">
+
+               <li class="navigation__item">
+                     <a class="navigation__link" href="#">about</a>
+                </li>
+
+                <li class="navigation__item">
+                     <a class="navigation__link" href="#">offer</a>
+                </li>
+
+                <li class="navigation__item">
+                     <a class="navigation__link" href="#">
+                     <img class="navigation__image" src="img/logo.png" alt="logo"></a>
+                </li>
+
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">gallery</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">contact</a>
+                </li>            
+            </ul>
+        <a class="mobile__nav js__nav-icon"><i class="ion-navicon-round mobile__nav-icon"></i></a>
+        </nav>
+    </header>
+
+    <section class="hero js__section-hero">
+        <div class="hero__title">
+            <h1>
+                <img src="img/title.png" alt="title" class="hero__title-img">
+            </h1>
+        </div>
+        <div class="button">
+            <a href="#popup" class="button__primary">Enter the gates</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__items">
+            <span class="footer__items-copy">&copy; 2019 raspberry kingdom</span>
+        </div>
+        <div class="footer__items">
+            <a class="footer__items-cookies" href="#">Cookies</a>
+             <span class="footer__items-separator">|</span>
+            <a class="footer__items-cookies" href="#">Privacy</a>
+        </div>
+        <div class="footer__items">
+            <span class="footer__items-design">
+                    Design by 
+            <span class="footer__items-design-author">Wizard of Oz</span>
+            </span>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+    <div class="popup__content">
+    <a class="popup__close" href="#">&times;</a>
+    <h2 class="popup__header">Are you a Raspberry Knight?</h2>
+    <form class="form" action="#" id="login_form">
+        <div class="form__group">
+           <input id="form_email" type="text" class="form__input" placeholder="Email" required>
+           <label for="form_email" class="form__label"></label>
+        </div>
+          
+        <div class="form__group">
+          <input id="form_password" type="password" class="form__input" placeholder="Password" required>
+          <label for="form_password" class="form__label"></label>
+        </div>
+
+      <button class="form__button" type="submit">log in</button>
+      <span class="form__success"></span>
+      <span class="form__fail"></span>
+    </form>    
+  </div>    
+  </div>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
