@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0"
-  }
+  },
+  "devDependencies": {}
 }
